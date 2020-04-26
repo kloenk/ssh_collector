@@ -7,7 +7,7 @@ defmodule SSHCollector.Application do
 
   def start(_type, args) do
 
-    {config, args} = parse_args(args)
+    {config, _args} = parse_args(args)
 
     children = [
       {Plug.Cowboy, scheme: :http, plug: SSHCollector.Router, options: [port: config[:port]]},
