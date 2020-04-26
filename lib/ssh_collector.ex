@@ -1,4 +1,4 @@
-defmodule SshCollector do
+defmodule SSHCollector do
   @moduledoc """
   Documentation for `SshCollector`.
   """

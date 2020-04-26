@@ -1,8 +1,8 @@
-defmodule SshCollectorTest do
+defmodule SSHCollectorTest do
   use ExUnit.Case
-  doctest SshCollector
+  doctest SSHCollector
 
   test "greets the world" do
-    assert SshCollector.hello() == :world
+    assert SSHCollector.hello() == :world
   end
 end
