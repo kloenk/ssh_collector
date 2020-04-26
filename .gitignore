@@ -24,4 +24,4 @@ ssh_collector-*.tar
 
 .elixir_ls
 config.json
-ssh_collector
+/ssh_collector
