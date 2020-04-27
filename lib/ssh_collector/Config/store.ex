@@ -6,7 +6,7 @@ defmodule SSHCollector.Config.Store do
     GenServer.start_link(__MODULE__, %{}, name: :ssh_collector_config_store)
   end
 
-  def start_link(arg) do
+  def start_link(_arg) do
     start_link() # FIXME: parse config file to use
   end
 

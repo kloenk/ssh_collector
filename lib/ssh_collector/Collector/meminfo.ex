@@ -1,8 +1,8 @@
 defmodule SSHCollector.Collector.Meminfo do
-  @file "/proc/meminfo"
+  @file_path "/proc/meminfo"
 
   def get_meminfo(conn) do
-    SSHEx.cmd!(conn, "cat /proc/meminfo", [])
+    SSHEx.cmd!(conn, "cat #{@file_path}", [])
     |> String.split("\n")
     |> Stream.map(fn(row) ->
       String.trim(row)

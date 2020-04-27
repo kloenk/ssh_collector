@@ -11,7 +11,8 @@ defmodule SSHCollector.Application do
 
     children = [
       {Plug.Cowboy, scheme: :http, plug: SSHCollector.Router, options: [port: config[:port]]},
-      {SSHCollector.Config.Store, []}
+      {SSHCollector.Config.Store, []},
+      {SSHCollector.Collector.Store, []}
       # Starts a worker by calling: SshCollector.Worker.start_link(arg)
       # {SshCollector.Worker, arg}
     ]
